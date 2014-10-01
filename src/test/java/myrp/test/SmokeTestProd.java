@@ -6,6 +6,12 @@ import myrp.utilities.SmokeTestUtil;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import atu.testng.reports.ATUReports;
+import atu.testng.reports.listeners.ATUReportsListener;
+import atu.testng.reports.listeners.ConfigurationListener;
+import atu.testng.reports.listeners.MethodListener;
+import atu.testng.reports.utils.Utils;
+
 @Listeners({ ATUReportsListener.class, ConfigurationListener.class, MethodListener.class })
 
 public class SmokeTestProd extends TestInitReference {
